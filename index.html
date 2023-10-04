@@ -22,52 +22,9 @@
 
       
 <body>
-# Ask for user information
-name = input("Victor De Rochegonde: ")
-age = input("I am 16 years old: ")
-hobbies = input("My hobbies are (football, sports in general): ")
 
-# Create the HTML content with inline CSS
-html_content = f"""
-<!DOCTYPE html>
-<html>
-<head>
-    <style>
-        .about-me-box {{
-            border: 2px solid #333;
-            padding: 10px;
-            width: 300px;
-            margin: 0 auto;
-        }}
-        .about-me-header {{
-            font-size: 18px;
-            font-weight: bold;
-        }}
-        .about-me-info {{
-            margin-top: 5px;
-        }}
-    </style>
-</head>
-<body>
-    <div class="about-me-box">
-        <div class="about-me-header">ABOUT ME</div>
-        <div class="about-me-info">
-            <p><strong>Name:</strong> {name}</p>
-            <p><strong>Age:</strong> {age}</p>
-            <p><strong>Hobbies:</strong> {hobbies}</p>
-        </div>
-    </div>
-</body>
-</html>
-"""
 
-# Save the HTML content to a file
-with open("about_me.html", "w") as file:
-    file.write(html_content)
 
-print("About Me box generated. Check 'about_me.html' for the result.")
-
-<body>
 </body>
     
 </html>
