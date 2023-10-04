@@ -1,72 +1,57 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>About Me</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
-        .about-me-box {
-            background-color: #fff;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            padding: 20px;
-            max-width: 400px;
-            text-align: center;
-        }
+.about-me-box {
+    background-color: #3498db;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    text-align: center;
+    color: #fff;
+}
 
-        .about-me-header {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
+.about-me-header {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
 
-        .about-me-info {
-            font-size: 16px;
-            margin-top: 10px;
-        }
-    </style>
-</head>
-<body>
-    <div class="about-me-box">
-        <div class="about-me-header">Hello, my name is Victor De Rochegonde</div>
-        <div class="about-me-info">
-            <p>I am 16 years old.</p>
-            <p>I work at MIT in the US.</p>
-            <p>I want to be an engineer when I'm older.</p>
-            <p>Currently, my hobbies are football, but I've got an interest in all other sports like rugby, tennis, and cycling.</p>
-            <p>That's all about me!</p>
-        </div>
-    </div>
-</body>
-</html>
+.about-me-info {
+    font-size: 16px;
+    margin-top: 15px;
+    line-height: 1.5;
+}
 
-    </style>
-</head>
-<body>
-    <div class="about-me-box">
-        <div class="about-me-header">ABOUT ME</div>
-        <div class="about-me-info">
-            <p><strong>Name:</strong> {name}</p>
-            <p><strong>Age:</strong> {age}</p>
-            <p><strong>Location:</strong> {location}</p>
-            <p><strong>Hobbies:</strong> {hobbies}</p>
-        </div>
-    </div>
-</body>
-</html>
-"""
+.about-me-info p {
+    margin: 10px 0;
+}
 
-# Save the HTML content to a file
-with open("about_me.html", "w") as file:
-    file.write(html_content)
+.about-me-info p:first-child {
+    margin-top: 0;
+}
 
-print("About Me box generated. Check 'about_me.html' for the result.")
+.about-me-info strong {
+    color: #f39c12;
+}
+
+.about-me-info a {
+    color: #f39c12;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.about-me-info a:hover {
+    color: #e74c3c;
+}
+
