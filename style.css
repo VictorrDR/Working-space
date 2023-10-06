@@ -55,15 +55,4 @@ body {
     color: #e74c3c;
 }
 
-.image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
 
-img {
-    border: 2px solid #c7bd8b; /* Change the color and thickness of the border as needed */
-    border-radius: 10px; /* Optional: Add rounded corners to the border */
-    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
-    height: auto; /* Maintain the image's aspect ratio */
