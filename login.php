@@ -1,6 +1,6 @@
 <?php
 // Define your secret password
-$secretPassword = "your_password_here";
+$secretPassword = "Winston";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $enteredPassword = $_POST["password"];
